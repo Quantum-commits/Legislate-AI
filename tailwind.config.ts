@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Legal app custom colors
+				'justice-gold': 'hsl(var(--justice-gold))',
+				'trust-blue': 'hsl(var(--trust-blue))',
+				'empowerment-green': 'hsl(var(--empowerment-green))',
+				'chat-user': 'hsl(var(--chat-user))',
+				'chat-assistant': 'hsl(var(--chat-assistant))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +68,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'devanagari': ['Noto Sans Devanagari', 'system-ui', 'sans-serif'],
+				'telugu': ['Noto Sans Telugu', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

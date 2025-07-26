@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "name": "Legal Aid Society of India",
+    "region": "Delhi",
+    "state": "Delhi",
+    "phone": "+91-11-2338-8000",
+    "whatsapp": "+91-98765-43210",
+    "email": "help@legalaid.in",
+    "domains": ["Domestic Violence", "Consumer Rights", "Property Disputes"],
+    "languages": ["en", "hi"]
+  },
+  {
+    "id": "2",
+    "name": "Mahila Mandal Legal Help",
+    "region": "Mumbai",
+    "state": "Maharashtra",
+    "phone": "+91-22-2674-5000",
+    "whatsapp": "+91-98765-43211",
+    "email": "support@mahilamandal.org",
+    "domains": ["Women's Rights", "Domestic Violence", "Child Welfare"],
+    "languages": ["en", "hi", "mr"]
+  },
+  {
+    "id": "3",
+    "name": "Telugu Legal Aid Foundation",
+    "region": "Hyderabad",
+    "state": "Telangana",
+    "phone": "+91-40-2335-5000",
+    "whatsapp": "+91-98765-43212",
+    "email": "help@telugulegaid.org",
+    "domains": ["Land Disputes", "Employment Rights", "Government Schemes"],
+    "languages": ["en", "te", "hi"]
+  },
+  {
+    "id": "4",
+    "name": "Rural Rights Collective",
+    "region": "Pune",
+    "state": "Maharashtra",
+    "phone": "+91-20-2613-7000",
+    "whatsapp": "+91-98765-43213",
+    "email": "contact@ruralrights.org",
+    "domains": ["Land Rights", "Water Rights", "Agriculture"],
+    "languages": ["en", "mr", "hi"]
+  },
+  {
+    "id": "5",
+    "name": "Citizens' Legal Centre",
+    "region": "Bangalore",
+    "state": "Karnataka",
+    "phone": "+91-80-2222-9000",
+    "whatsapp": "+91-98765-43214",
+    "email": "info@citizenslegal.org",
+    "domains": ["RTI Applications", "Pension Issues", "Consumer Protection"],
+    "languages": ["en", "hi"]
+  },
+  {
+    "id": "6",
+    "name": "Andhra Legal Welfare Society",
+    "region": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "phone": "+91-891-2788-4000",
+    "whatsapp": "+91-98765-43215",
+    "email": "welfare@andhralegal.org",
+    "domains": ["Government Schemes", "Employment", "Education Rights"],
+    "languages": ["en", "te"]
+  },
+  {
+    "id": "7",
+    "name": "Women's Legal Aid Network",
+    "region": "Chennai",
+    "state": "Tamil Nadu",
+    "phone": "+91-44-2434-5000",
+    "whatsapp": "+91-98765-43216",
+    "email": "help@womenlegal.org",
+    "domains": ["Domestic Violence", "Property Rights", "Harassment"],
+    "languages": ["en", "hi"]
+  },
+  {
+    "id": "8",
+    "name": "Marathi Nyay Sahayata Kendra",
+    "region": "Nashik",
+    "state": "Maharashtra",
+    "phone": "+91-253-2345-6000",
+    "whatsapp": "+91-98765-43217",
+    "email": "sahayata@marathinyay.org",
+    "domains": ["Family Law", "Property", "Government Services"],
+    "languages": ["mr", "hi", "en"]
+  },
+  {
+    "id": "9",
+    "name": "National Legal Services Authority",
+    "region": "New Delhi",
+    "state": "Delhi",
+    "phone": "+91-11-2338-8888",
+    "whatsapp": "+91-98765-43218",
+    "email": "nalsa@gov.in",
+    "domains": ["Free Legal Aid", "Lok Adalat", "Alternative Dispute Resolution"],
+    "languages": ["en", "hi"]
+  },
+  {
+    "id": "10",
+    "name": "Tribal Rights Foundation",
+    "region": "Bhopal",
+    "state": "Madhya Pradesh",
+    "phone": "+91-755-2661-8000",
+    "whatsapp": "+91-98765-43219",
+    "email": "tribal@tribalrights.org",
+    "domains": ["Tribal Rights", "Forest Rights", "Land Issues"],
+    "languages": ["en", "hi"]
+  }
+]
