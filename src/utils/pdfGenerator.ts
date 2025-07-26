@@ -1,14 +1,15 @@
 import { jsPDF } from 'jspdf';
 
 export interface DocumentData {
-  type: 'FIR' | 'RTI';
+  type: 'FIR' | 'RTI' | 'explanation';
   content: string;
   userDetails?: {
     name?: string;
     address?: string;
     phone?: string;
   };
-  language: string;
+  language?: string;
+  title?: string;
 }
 
 export const generatePDF = (data: DocumentData): jsPDF => {
@@ -21,7 +22,9 @@ export const generatePDF = (data: DocumentData): jsPDF => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   
-  const headerText = data.type === 'FIR' ? 
+  const headerText = data.type === 'explanation' ? 
+    (data.title || 'Document Explanation') :
+    data.type === 'FIR' ? 
     (data.language === 'hi' ? 'प्राथमिकी रिपोर्ट (FIR)' : 
      data.language === 'te' ? 'ప్రాథమిక నివేదిక (FIR)' :
      data.language === 'mr' ? 'प्राथमिक अहवाल (FIR)' :

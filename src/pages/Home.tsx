@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, FileText, Users, Mic, Scale, Heart } from 'lucide-react';
+import { MessageCircle, FileText, Users, Mic, Scale, Heart, Camera } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 
 interface HomeProps {
-  onNavigate: (page: 'chat' | 'document' | 'ngo') => void;
+  onNavigate: (page: 'chat' | 'document' | 'ngo' | 'ocr') => void;
 }
 
 const Home: React.FC<HomeProps> = ({ onNavigate }) => {
@@ -30,6 +30,14 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       bgColor: 'bg-justice-gold/10'
     },
     {
+      icon: Camera,
+      title: 'Scan Document',
+      description: 'Upload and explain legal documents with AI',
+      action: () => onNavigate('ocr'),
+      color: 'text-empowerment-green',
+      bgColor: 'bg-empowerment-green/10'
+    },
+    {
       icon: FileText,
       title: t('documentGen'),
       description: 'Generate FIR, RTI and other legal documents',
@@ -48,32 +56,38 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <div className="container mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-6">
-            <div className="relative">
-              <Scale className="h-16 w-16 text-primary" />
-              <Heart className="h-6 w-6 text-justice-gold absolute -top-1 -right-1" />
+        {/* Hero Section */}
+        <div className="relative mb-12 rounded-3xl overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 p-12 text-white">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="relative z-10">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                Legislate AI
+              </h1>
+              
+              <p className="text-xl md:text-2xl mb-2 opacity-90">
+                आपकी आवाज़ है आपका अधिकार
+              </p>
+              
+              <p className="text-lg mb-8 opacity-80">
+                कानूनी समस्याओं का समाधान • दस्तावेज़ निर्माण • विशेषज्ञ सहायता
+              </p>
+              
+              <div className="flex justify-center">
+                <LanguageSelector />
+              </div>
             </div>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            {t('appName')}
-          </h1>
-          
-          <p className="text-xl text-muted-foreground mb-6">
-            {t('tagline')}
-          </p>
-          
-          <div className="flex justify-center">
-            <LanguageSelector />
-          </div>
+          {/* Decorative elements */}
+          <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
+          <div className="absolute bottom-10 right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
         </div>
 
         {/* Features Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
           {features.map((feature, index) => (
             <Card 
               key={index}

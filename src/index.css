@@ -8,44 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Justice-themed color palette */
-    --background: 0 0% 100%;
-    --foreground: 240 15% 9%;
+    /* Dark theme inspired by the reference */
+    --background: 220 13% 18%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 15% 9%;
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 15% 9%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Deep indigo for authority and trust */
-    --primary: 249 47% 26%;
-    --primary-foreground: 0 0% 98%;
+    /* Light primary for contrast */
+    --primary: 210 40% 98%;
+    --primary-foreground: 220 13% 18%;
     
-    /* Warm secondary for approachability */
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 240 15% 9%;
+    /* Muted secondary */
+    --secondary: 215 27% 32%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 215 27% 32%;
+    --muted-foreground: 217 10% 64%;
 
-    /* Golden accent for hope and empowerment */
-    --accent: 45 93% 58%;
-    --accent-foreground: 240 15% 9%;
+    /* Accent colors */
+    --accent: 215 27% 32%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 249 47% 26%;
+    --border: 215 27% 32%;
+    --input: 215 27% 32%;
+    --ring: 216 12% 84%;
 
-    /* Custom legal theme colors */
+    /* Custom legal theme colors for dark theme */
     --justice-gold: 45 93% 58%;
     --trust-blue: 217 91% 60%;
-    --empowerment-green: 142 71% 45%;
-    --chat-user: 249 47% 26%;
-    --chat-assistant: 210 40% 96%;
+    --empowerment-green: 142 69% 58%;
+    --chat-user: 217 91% 60%;
+    --chat-assistant: 215 27% 32%;
     
     /* Gradients for modern feel */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--trust-blue)));
