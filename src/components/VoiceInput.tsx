@@ -14,7 +14,8 @@ const speechLangCodes = {
   en: 'en-US',
   hi: 'hi-IN',
   te: 'te-IN',
-  mr: 'mr-IN'
+  mr: 'mr-IN',
+  kn: 'kn-IN'
 };
 
 const VoiceInput: React.FC<VoiceInputProps> = ({ onTranscript, disabled = false }) => {

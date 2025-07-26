@@ -5,7 +5,8 @@ export const LANGUAGES = {
   en: { code: 'en', name: 'English', nativeName: 'English' },
   hi: { code: 'hi', name: 'Hindi', nativeName: 'हिंदी' },
   te: { code: 'te', name: 'Telugu', nativeName: 'తెలుగు' },
-  mr: { code: 'mr', name: 'Marathi', nativeName: 'मराठी' }
+  mr: { code: 'mr', name: 'Marathi', nativeName: 'मराठी' },
+  kn: { code: 'kn', name: 'Kannada', nativeName: 'ಕನ್ನಡ' }
 } as const;
 
 export type LanguageCode = keyof typeof LANGUAGES;
@@ -13,8 +14,8 @@ export type LanguageCode = keyof typeof LANGUAGES;
 // Translation strings for UI
 export const translations = {
   en: {
-    appName: 'Lovable AI',
-    tagline: 'Legal Help for Everyone',
+    appName: 'Legislate AI',
+    tagline: 'Your Voice is Your Right',
     chatPlaceholder: 'Ask your legal question...',
     voiceButton: 'Speak',
     sendButton: 'Send',
@@ -32,8 +33,8 @@ export const translations = {
     ngoDirectory: 'NGO Directory'
   },
   hi: {
-    appName: 'लवेबल AI',
-    tagline: 'सभी के लिए कानूनी सहायता',
+    appName: 'लेजिस्लेट AI',
+    tagline: 'आपकी आवाज़ है आपका अधिकार',
     chatPlaceholder: 'अपना कानूनी सवाल पूछें...',
     voiceButton: 'बोलें',
     sendButton: 'भेजें',
@@ -51,8 +52,8 @@ export const translations = {
     ngoDirectory: 'NGO निर्देशिका'
   },
   te: {
-    appName: 'లవేబల్ AI',
-    tagline: 'అందరికీ న్యాయ సహాయం',
+    appName: 'లెజిస్లేట్ AI',
+    tagline: 'మీ గొంతు మీ హక్కు',
     chatPlaceholder: 'మీ చట్టపరమైన ప్రశ్న అడగండి...',
     voiceButton: 'మాట్లాడండి',
     sendButton: 'పంపండి',
@@ -70,8 +71,8 @@ export const translations = {
     ngoDirectory: 'NGO డైరెక్టరీ'
   },
   mr: {
-    appName: 'लवेबल AI',
-    tagline: 'सर्वांसाठी कायदेशीर मदत',
+    appName: 'लेजिस्लेट AI',
+    tagline: 'तुमचा आवाज तुमचा हक्क',
     chatPlaceholder: 'तुमचा कायदेशीर प्रश्न विचारा...',
     voiceButton: 'बोला',
     sendButton: 'पाठवा',
@@ -87,6 +88,25 @@ export const translations = {
     voiceInput: 'आवाज इनपुट',
     documentGen: 'दस्तऐवज जनरेटर',
     ngoDirectory: 'NGO निर्देशिका'
+  },
+  kn: {
+    appName: 'ಲೆಜಿಸ್ಲೇಟ್ AI',
+    tagline: 'ನಿಮ್ಮ ಧ್ವನಿ ನಿಮ್ಮ ಹಕ್ಕು',
+    chatPlaceholder: 'ನಿಮ್ಮ ಕಾನೂನು ಪ್ರಶ್ನೆ ಕೇಳಿ...',
+    voiceButton: 'ಮಾತನಾಡಿ',
+    sendButton: 'ಕಳುಹಿಸಿ',
+    typing: 'ಟೈಪ್ ಮಾಡುತ್ತಿದೆ...',
+    listening: 'ಕೇಳುತ್ತಿದೆ...',
+    generateDocument: 'ದಾಖಲೆ ರಚಿಸಿ',
+    findNGO: 'NGO ಸಹಾಯ ಹುಡುಕಿ',
+    downloadPDF: 'PDF ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ',
+    shareWhatsApp: 'WhatsApp ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ',
+    selectLanguage: 'ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ',
+    legalHelp: 'ಕಾನೂನು ಸಹಾಯ',
+    askQuestion: 'ಪ್ರಶ್ನೆ ಕೇಳಿ',
+    voiceInput: 'ಧ್ವನಿ ಇನ್‌ಪುಟ್',
+    documentGen: 'ದಾಖಲೆ ಜನರೇಟರ್',
+    ngoDirectory: 'NGO ಡೈರೆಕ್ಟರಿ'
   }
 };
 
