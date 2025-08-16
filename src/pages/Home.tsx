@@ -102,7 +102,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
              language === 'kn' ? 'ನಿಮ್ಮ ಧ್ವನಿಯೇ ನಿಮ್ಮ ಹಕ್ಕು' :
              'Your Voice, Your Right'}
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             {language === 'hi' ? 'AI के साथ कानूनी समस्याओं का समाधान, दस्तावेज़ निर्माण और विशेषज्ञ सहायता' :
              language === 'te' ? 'AI తో చట్టపరమైన సమస్యల పరిష్కారం, పత్రాల తయారీ మరియు నిపుణుల సహాయం' :
              language === 'mr' ? 'AI सह कायदेशीर समस्यांचे निराकरण, दस्तऐवज निर्मिती आणि तज्ञ मदत' :
