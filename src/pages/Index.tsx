@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-type Page = 'home' | 'chat' | 'document' | 'ngo' | 'ocr';
+type Page = 'home' | 'chat' | 'document' | 'ngo' | 'ocr' | 'bandwidth' | 'court';
 
 const Index = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -89,6 +89,20 @@ const Index = () => {
               <OCRScanner />
             </React.Suspense>
           </div>
+        );
+      case 'bandwidth':
+        const LowBandwidthMode = React.lazy(() => import('@/components/LowBandwidthMode'));
+        return (
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <LowBandwidthMode onBack={() => setCurrentPage('home')} />
+          </React.Suspense>
+        );
+      case 'court':
+        const CourtTracker = React.lazy(() => import('@/components/CourtTracker'));
+        return (
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <CourtTracker onBack={() => setCurrentPage('home')} />
+          </React.Suspense>
         );
       default:
         return <Home onNavigate={handleNavigation} />;
